@@ -34,8 +34,9 @@ while run:
             # create json file
             now = datetime.now()
             timestamp = datetime.timestamp(now)
+            dt_obj=datetime.fromtimestamp(timestamp)
             data["notes"].append({
-                    str(timestamp):text
+                    str(dt_obj):text
                 })
 
             with open("notepad.json","w") as outfile:
