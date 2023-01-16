@@ -28,7 +28,9 @@ while run:
         audio_text=r.listen(source)
         
         try:
+            print("reached here1")
             text=r.recognize_google(audio_text)
+            print("reached here2")
             print(json.dumps(data,indent=4))
 
             # create json file
