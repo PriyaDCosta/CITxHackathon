@@ -13,7 +13,7 @@ Date: 16 January 2023
 '''
 
 # GUI window
-with open("TeamCurryLogo.png", "rb") as f:
+with open("./image/TeamCurryLogo.png", "rb") as f:
     image_bytes = f.read()
 
 layout = [[sg.Image(data=image_bytes)],
