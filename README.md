@@ -6,8 +6,7 @@
 - Run the command "python3 script.py" in your terminal (make sure the app is in your working directory)
 - The GUI will open, and give you an option to start recording the conversation
 - As the recording occurs, you will be able to see the transcripts of the speech on the terminal
-- When you want to finish recording, click on the "Stop" button on the GUI 
 - Wait for at least 20 seconds after the last word being spoken so that everything is transcribed
 - A output.txt file with the complete output will be generated and stored in the same directory
-- 
+
 
