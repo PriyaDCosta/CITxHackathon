@@ -18,9 +18,9 @@ with open("./image/TeamCurryLogo.png", "rb") as f:
 
 layout = [[sg.Image(data=image_bytes)],
             [sg.Text('Press start button to record')],
-          [sg.Button('Start'), sg.Button('Stop')]]
+          [sg.Button('Start')]]
 
-window = sg.Window('Team Curry\'s CITxHackathon Speech2Text', layout, size=(400,300), resizable=True, background_color='green')
+window = sg.Window('Team Curry\'s CITxHackathon Speech2Text', layout, size=(500,400), resizable=True, background_color='green')
 
 
 r = sr.Recognizer()
@@ -56,7 +56,7 @@ while True:
                 print("Working")
                         
                 try:
-                    r.adjust_for_ambient_noise(source,duration = 0.5) #eliminates any background noises
+                    r.adjust_for_ambient_noise(source,duration = 0.7) #eliminates any background noises
                     audio_text=r.listen(source)
                     text=r.recognize_google(audio_text)
                     print(json.dumps(data,indent=4))
